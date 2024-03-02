@@ -1,0 +1,10 @@
+Set container
+Name: Ajon, Group: CS101, Student ID: 12345, Grades: 85 90 78 92 
+Name: Bmma, Group: CS103, Student ID: 65432, Grades: 88 93 76 85 
+Name: Cleg, Group: CS102, Student ID: 54321, Grades: 75 88 94 87 
+Name: Dob, Group: CS101, Student ID: 98765, Grades: 92 85 79 88 
+Unord container
+Name: Ajon, Group: CS101, Student ID: 12345, Grades: 85 90 78 92 
+Name: Cleg, Group: CS102, Student ID: 54321, Grades: 75 88 94 87 
+Name: Dob, Group: CS101, Student ID: 98765, Grades: 92 85 79 88 
+Name: Bmma, Group: CS103, Student ID: 65432, Grades: 88 93 76 85 
