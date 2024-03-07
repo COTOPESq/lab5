@@ -4,6 +4,7 @@
 #include <vector>
 #include <list>
 #include <set>
+#include <map>
 #include <unordered_set>
 #include <algorithm>
 
@@ -51,6 +52,7 @@ bool operator == (const Student& student1, const Student& student2) {
 }
 
 bool operator < (const Student& student1, const Student& student2) {
+    if (student1.name == student2.name) return student1.studentId < student2.studentId;
     return (student1.name < student2.name);
 }
 
@@ -66,8 +68,13 @@ int main() {
         cerr << "Unable to open input file" << endl;
         return 1;
     }
-
+    map<int, bool> m;
     while (inputFile >> name >> group >> studentId >> grades[0] >> grades[1] >> grades[2] >> grades[3]) {
+        if (m[studentId]) {
+            cerr << "Error: The id of current student is not unique\n";
+            return 1;
+        }
+        m[studentId] = true;
         StudentSet.insert(Student(name, group, studentId, grades));
         StundetUnd.insert(Student(name, group, studentId, grades));
     }
